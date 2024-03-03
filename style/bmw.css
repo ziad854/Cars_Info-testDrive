@@ -1,0 +1,58 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.bmw-me.com/content/dam/bmw/common/all-models/x-series/x7/2022/highlights/bmw-x-series-x7-cp-exterior-highlights-desktop.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    transition:background-image 1s;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{ 
+    width: 320px;
+    cursor: pointer;
+}
+nav ul{
+    flex:1;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav .btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-right: 7%;
+}
+.info {
+    width: 50%;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+}
+ /* .line{
+    flex: 1;
+    background: #fff;
+    height: 4px;
+} */

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Playfair Display', serif;
+    
+}
+/* body{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url();
+    background-position: center;
+    babodyckground-size: cover; 
+} */
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ff105f ;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: darkorchid;
+}
+
+
+.navbar{
+    width: 100%;
+    height:60px ;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+.navbar .logo a{
+    font-size:1.5rem ;
+    font-weight: bold;
+
+} 
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle-btn{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn {
+    background-color: coral;
+    color: aliceblue;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action-btn:hover{
+    scale: 1.05;
+    color: #000;
+}
+
+.action-btn:active{
+    scale: 0.95;
+
+}
+header{
+@media (max-width: 990px) {
+    .navbar.links,
+    .navbar.action_btn{
+        display: none;
+    }
+    
+    .navbar.toggle-btn{
+        display: block;
+    }
+
+}
+}
+
+
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.cards{
+    width: 20%;
+    height: 50%;
+    display:inline-block;
+    background-color:transparent;
+    border-radius:20px ;
+    margin: 50px;
+    box-sizing: border-box;
+}
+
+.cards:hover{
+       box-shadow: 2px 2px 10px black;
+}
+
+.image img{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+   
+}
+.des{
+    text-align: center;
+}
+
+button{
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right,black,grey);
+    border-radius: 20px;
+    color:whitesmoke;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: black;
+    color: aliceblue;
+    transition: 0.001;
+}
+
+
+@media screen and (max-width:1200px){
+    .cards{
+        width:40% ;
+
+    }
+}
+@media screen and (max-width:600px){
+    .cards{
+        width:90% ;
+        
+    }
+}
